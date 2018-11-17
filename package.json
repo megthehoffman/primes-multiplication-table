@@ -4,7 +4,7 @@
   "description": "",
   "main": "primes-multiplication-table.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/megthehoffman/primes-multiplication-table/issues"
   },
-  "homepage": "https://github.com/megthehoffman/primes-multiplication-table#readme"
+  "homepage": "https://github.com/megthehoffman/primes-multiplication-table#readme",
+  "devDependencies": {
+    "jasmine": "^3.3.0"
+  }
 }
