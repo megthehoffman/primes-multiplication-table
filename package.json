@@ -1,0 +1,19 @@
+{
+  "name": "primes-multiplication-table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "primes-multiplication-table.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megthehoffman/primes-multiplication-table.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/megthehoffman/primes-multiplication-table/issues"
+  },
+  "homepage": "https://github.com/megthehoffman/primes-multiplication-table#readme"
+}
