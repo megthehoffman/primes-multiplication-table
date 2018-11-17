@@ -1,72 +1,18 @@
 describe("Primes multiplcation table", function() {
-  var Primes = require('../src/primes-multiplication-table');
-});
+  let primes = require('../src/primes-multiplication-table.js');
 
-describe("isPrime", function() {
-  it("determines if a given integer is prime", function() {
-    expect(isPrime(0)).toBe(false);
-    expect(isPrime(1)).toBe(false);
-    expect(isPrime(2)).toBe(true);
-    expect(isPrime(3)).toBe(true);
-    expect(isPrime(4)).toBe(false);
-    expect(isPrime(13)).toBe(true);
-    expect(isPrime(99)).toBe(false);
-    expect(isPrime(105943)).toBe(true);
+
+  describe("isPrime", function() {
+    it("determines if a given integer is prime", function() {
+      expect(primes.isPrime(0)).toBe(false);
+      expect(primes.isPrime(1)).toBe(false);
+      expect(primes.isPrime(2)).toBe(true);
+      expect(primes.isPrime(3)).toBe(true);
+      expect(primes.isPrime(4)).toBe(false);
+      expect(primes.isPrime(13)).toBe(true);
+      expect(primes.isPrime(99)).toBe(false);
+      expect(primes.isPrime(105943)).toBe(true);
+    });
   });
 });
 
-
-//   beforeEach(function() {
-//     player = new Player();
-//     song = new Song();
-//   });
-
-//   it("should be able to play a Song", function() {
-//     player.play(song);
-//     expect(player.currentlyPlayingSong).toEqual(song);
-
-//     //demonstrates use of custom matcher
-//     expect(player).toBePlaying(song);
-//   });
-
-//   describe("when song has been paused", function() {
-//     beforeEach(function() {
-//       player.play(song);
-//       player.pause();
-//     });
-
-//     it("should indicate that the song is currently paused", function() {
-//       expect(player.isPlaying).toBeFalsy();
-
-//       // demonstrates use of 'not' with a custom matcher
-//       expect(player).not.toBePlaying(song);
-//     });
-
-//     it("should be possible to resume", function() {
-//       player.resume();
-//       expect(player.isPlaying).toBeTruthy();
-//       expect(player.currentlyPlayingSong).toEqual(song);
-//     });
-//   });
-
-//   // demonstrates use of spies to intercept and test method calls
-//   it("tells the current song if the user has made it a favorite", function() {
-//     spyOn(song, 'persistFavoriteStatus');
-
-//     player.play(song);
-//     player.makeFavorite();
-
-//     expect(song.persistFavoriteStatus).toHaveBeenCalledWith(true);
-//   });
-
-//   //demonstrates use of expected exceptions
-//   describe("#resume", function() {
-//     it("should throw an exception if song is already playing", function() {
-//       player.play(song);
-
-//       expect(function() {
-//         player.resume();
-//       }).toThrowError("song is already playing");
-//     });
-//   });
-// });
