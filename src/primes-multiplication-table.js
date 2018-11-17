@@ -20,7 +20,7 @@ function storePrimes() {
 }
 
 // Determine if a number is prime
-function isPrime() {
+function isPrime(number) {
     /**
      * If a number is prime, then it will not have a prime factor > Math.sqrt(number)
      * EX: to find all primes less than 100, every composite integer < 100 will have a prime factor less than Math.sqrt(100) = 10
