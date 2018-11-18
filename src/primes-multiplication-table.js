@@ -2,7 +2,6 @@
 
 /**
  * TODO: 
- * Multiply the primes, only amount of times necessary to display table
  * Display table
  */
 
@@ -11,9 +10,7 @@ module.exports = {
   // Store first n primes in some data structure, use another function to determine if prime
   generatePrimesArray: function(n) {
     let primes = []
-
     let i = 0
-
     while (primes.length < n) {
       if (this.isPrime(i)) {
         primes.push(i);
@@ -43,9 +40,24 @@ module.exports = {
     return true;
   },
 
-  // Complete necessary multiplication of primes to fill table
-  multiplyPrimes: function() {
+  // Complete multiplication of primes to fill table
+  multiplyPrimes: function(primesArray) {
+    if (primesArray.length === 0) {
+      return null;
+    }
 
+    let firstArray = [null].concat(primesArray);
+    let multipliedPrimes = [firstArray];
+
+    primesArray.forEach(function(prime) {
+      let newRow = [prime];
+      primesArray.forEach(function(primeToMultiplyBy) {
+        newRow.push(prime * primeToMultiplyBy);
+      });
+      multipliedPrimes.push(newRow);
+    });
+
+    return multipliedPrimes;
   },
 
   // Display table with the values from multiplyPrimes()
