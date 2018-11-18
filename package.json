@@ -1,6 +1,6 @@
 {
   "name": "primes-multiplication-table",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Displays multiplication table of up to N primes",
   "main": "primes-multiplication-table.js",
   "scripts": {
