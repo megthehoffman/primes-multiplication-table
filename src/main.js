@@ -10,3 +10,4 @@ function makePrimesMultTable(n) {
 // makePrimesMultTable(1);
 // makePrimesMultTable(0);
 // makePrimesMultTable(77);
+// makePrimesMultTable(1001);

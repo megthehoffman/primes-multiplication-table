@@ -1,5 +1,7 @@
 // A program that prints out a multiplication table of the first 10 prime numbers.
 
+#! /usr/bin/env node
+
 module.exports = {
 
   // Store first n primes in some data structure, use another function to determine if prime
