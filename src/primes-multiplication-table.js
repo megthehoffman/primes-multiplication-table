@@ -4,7 +4,7 @@
 
 module.exports = {
 
-  // Store first n primes in some data structure, use another function to determine if prime
+  // Store first n primes, use isPrime to determine if a given number is prime
   generatePrimesArray: function(n) {
     let primes = []
     let i = 0

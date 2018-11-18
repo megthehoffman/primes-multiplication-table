@@ -6,8 +6,4 @@ function makePrimesMultTable(n) {
   primes.displayTable(multipliedPrimes);
   }
 
-// makePrimesMultTable(10);
-// makePrimesMultTable(1);
-// makePrimesMultTable(0);
-// makePrimesMultTable(77);
-// makePrimesMultTable(1001);
+  makePrimesMultTable(10);
