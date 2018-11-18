@@ -4,9 +4,13 @@ Coding challenge for Funding Circle US. This program prints out a multiplication
 ## Usage
 `npm i primes-multiplication-table`
 
-`const primes = require('../src/primes-multiplication-table.js');`
-
-`primes.makePrimesMultTable(10);`
+In your project, create a file (e.g. main.js), with this code:
+```
+const primes = require('primes-multiplication-table');
+primes.makePrimesMultTable(10);
+```
+Run from the command line using:
+`node main.js`
 
 See Example Usage below.
 
