@@ -11,14 +11,20 @@
 module.exports = {
 
   // Store first n primes in some data structure, use another function to determine if prime
-  generatePrimesList: function(n) {
-    /**
-     * TESTS
-     * n = 10, are all of the primes that are supposed to be here stored here
-     * primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
-     *
-     * What if n = 1? 2? 10? 0? 4762? 8375164?
-     */
+  generatePrimesArray: function(n) {
+    let primes = []
+
+    let i = 0
+
+    while (primes.length < n) {
+      if (this.isPrime(i)) {
+        primes.push(i);
+      }
+
+      i += 1;
+    }
+    
+    return primes;
   },
 
   // Determine if a number is prime, called by generatePrimesList

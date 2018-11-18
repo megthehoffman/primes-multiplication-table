@@ -14,5 +14,17 @@ describe("Primes multiplcation table", function() {
     expect(primes.isPrime(105943)).toBe(true);
   });
   });
+
+  describe("and generatePrimesArray", function() {
+  it("generates an array of numbers found to be prime, up to n numbers", function() {
+    expect(primes.generatePrimesArray(0)).toEqual([]);
+    expect(primes.generatePrimesArray(1)).toEqual([2]);
+    expect(primes.generatePrimesArray(2)).toEqual([2, 3]);
+    expect(primes.generatePrimesArray(10)).toEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29]);
+    expect(primes.generatePrimesArray(25)).toEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37,
+                                                    41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]);
+  });
+  });
+
 });
 
