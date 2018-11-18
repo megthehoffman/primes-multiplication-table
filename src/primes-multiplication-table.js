@@ -2,8 +2,6 @@
 
 /**
  * TODO: 
- * Find first 10 (or n) primes (use sieve of Eratosthenes)
- * Store primes for reference
  * Multiply the primes, only amount of times necessary to display table
  * Display table
  */
@@ -23,7 +21,7 @@ module.exports = {
 
       i += 1;
     }
-    
+
     return primes;
   },
 
