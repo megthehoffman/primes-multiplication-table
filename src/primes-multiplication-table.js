@@ -10,44 +10,43 @@
 
 module.exports = {
 
-    // Store first n primes in some data structure, use another function to determine if prime
-    generatePrimesList: function(n) {
-        /**
-         * TESTS
-         * n = 10, are all of the primes that are supposed to be here stored here
-         * primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
-         *
-         * What if n = 1? 2? 10? 0? 4762? 8375164?
-         */
-    },
+  // Store first n primes in some data structure, use another function to determine if prime
+  generatePrimesList: function(n) {
+    /**
+     * TESTS
+     * n = 10, are all of the primes that are supposed to be here stored here
+     * primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+     *
+     * What if n = 1? 2? 10? 0? 4762? 8375164?
+     */
+  },
 
-    // Determine if a number is prime
-    isPrime: function(number) {
-        /**
-         * If a number is prime, then it will not have a prime factor > Math.sqrt(number)
-         * EX: to find all primes less than 100, every composite integer < 100 will have a prime factor less than Math.sqrt(100) = 10
-         * Primes less than 10: 2, 3, 5, 7, so only need to check numbers for divisibility against these 
-         * Need to start at 3 (because 1 is not prime and 2 is), and loop through each number to check primality, until we accumulate n primes 
-         * EX: to check if 3 is prime, only need to check divisibility by numbers less than Math.floor(Math.sqrt(3)) = 1, if that number is >= 2
-         *
-         * TESTS
-         * Is 1 prime? 2? 3? 13? 541? 105943? 0?
-         */
-        
-        return true  
+  // Determine if a number is prime, called by generatePrimesList
+  isPrime: function(number) {
+    if (number <= 1) {
+      return false;
+    }
+    
+    const numberSqrt = Math.floor(Math.sqrt(number));
+    let i = 2;
+    while (i <= numberSqrt) {
+      if (number % i === 0) {
+        return false;
+      }
+      i += 1;
+    }
 
+    return true;
+  },
 
+  // Complete necessary multiplication of primes to fill table
+  multiplyPrimes: function() {
 
-    },
+  },
 
-    // Complete necessary multiplication of primes to fill table
-    multiplyPrimes: function() {
+  // Display table with the values from multiplyPrimes()
+  displayTable: function() {
 
-    },
-
-    // Display table with the values from multiplyPrimes()
-    displayTable: function() {
-
-    },
+  },
 
 }
