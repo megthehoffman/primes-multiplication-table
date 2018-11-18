@@ -1,6 +1,15 @@
 # primes-multiplication-table
 Coding challenge for Funding Circle US. This program prints out a multiplication table of the first N prime numbers, where N is an integer and where the first row and column of the table have N primes. When run, main.js executes with an N = 10, as this was the primary goal of the program. However, the program can be used for any N from 0 to very large numbers.
 
+## Usage
+`npm i primes-multiplication-table`
+
+`const primes = require('../src/primes-multiplication-table.js');`
+
+`primes.makePrimesMultTable(10);`
+
+See Example Usage below.
+
 ## Programming Process
 primes-multiplication-table.js contains four separate functions, each of which perform a specific task in the overall purpose of the program. 
 
@@ -33,10 +42,7 @@ The real time of execution for the program when N = 10 and when N = 1001 are as 
 ## Testing
 The program was developed using BDD, via the open source [Jasmine Behavior-Driven JavaScript](https://jasmine.github.io/pages/getting_started.html) testing framework. Jasmine was selected over other commonly utilized options (such as Mocha and Jest) because it is independent of the DOM and other JavaScript frameworks, and comes with all of the necessary basics out of the box. Mocha is extremely versatile, but requires using the assertion library, and Jest is best for large projects, and is often used alongside React.
 
-## Usage
-`npm i primes-multiplication-table`
-
-`const primes = require('../src/primes-multiplication-table.js');`
+## Examples Usages
 
 `primes.makePrimesMultTable(10);`
 
