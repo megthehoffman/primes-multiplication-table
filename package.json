@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/megthehoffman/primes-multiplication-table/issues"
   },
+  "files": [
+    "bin"
+  ],
   "homepage": "https://github.com/megthehoffman/primes-multiplication-table#readme",
   "bin": {
     "primes-multiplication-table": "primes-multiplication-table.js"
