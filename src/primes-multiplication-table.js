@@ -6,6 +6,7 @@ module.exports = {
   generatePrimesArray: function(n) {
     let primes = []
     let i = 0
+
     while (primes.length < n) {
       if (this.isPrime(i)) {
         primes.push(i);
@@ -29,6 +30,7 @@ module.exports = {
       if (number % i === 0) {
         return false;
       }
+
       i += 1;
     }
 
@@ -49,6 +51,7 @@ module.exports = {
       primesArray.forEach(function(primeToMultiplyBy) {
         newRow.push(prime * primeToMultiplyBy);
       });
+
       multipliedPrimes.push(newRow);
     });
 
@@ -56,8 +59,28 @@ module.exports = {
   },
 
   // Display table with the values from multiplyPrimes()
-  displayTable: function() {
+  displayTable: function(arraysToPrint) {
+    if (arraysToPrint === null) {
+      console.log("Oops, you told me you wanted zero primes! So here's a nonexistent table.");
+      return;
+    }
+    const arrayIdx = arraysToPrint.length - 1;
+    const spacesRequired = arraysToPrint[arrayIdx][arrayIdx].toString().length + 1;
 
+    arraysToPrint.forEach(function(array) {
+      let rowString = '';
+      array.forEach(function(product) {
+        if (product === null) {
+          rowString = rowString.concat(' '.repeat(spacesRequired));
+        } else {
+          productLength = product.toString().length;
+          rowString = rowString.concat(' '.repeat(spacesRequired - productLength));
+          rowString = rowString.concat(product.toString());
+        }
+      });
+
+      console.log(rowString);
+    });
   },
 
 }
