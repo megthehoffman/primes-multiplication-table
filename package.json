@@ -2,7 +2,7 @@
   "name": "primes-multiplication-table",
   "version": "1.5.0",
   "description": "Displays multiplication table of up to N primes",
-  "main": "primes-multiplication-table.js",
+  "main": "src/primes-multiplication-table.js",
   "scripts": {
     "test": "jasmine"
   },
@@ -16,8 +16,8 @@
     "url": "https://github.com/megthehoffman/primes-multiplication-table/issues"
   },
   "files": [
-    "primes-multiplication-table.js"
-  ],
+        "src/primes-multiplication-table.js"
+    ],
   "homepage": "https://github.com/megthehoffman/primes-multiplication-table#readme",
   "devDependencies": {
     "jasmine": "^3.3.0"
